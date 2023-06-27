@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA5F06062A16D2BF00C5536F /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F06052A16D2BF00C5536F /* MainApp.swift */; };
+		FA5F060A2A16D2C000C5536F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5F06092A16D2C000C5536F /* Assets.xcassets */; };
+		FA5F060D2A16D2C000C5536F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5F060C2A16D2C000C5536F /* Preview Assets.xcassets */; };
+		FA5F06152A16DBD400C5536F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06142A16DBD400C5536F /* CodeScanner */; };
+		FA5F06212A17E41D00C5536F /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06202A17E41D00C5536F /* Stripe */; };
+		FA5F06232A17E41D00C5536F /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06222A17E41D00C5536F /* StripeApplePay */; };
+		FA5F06252A17E41D00C5536F /* StripeCardScan in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06242A17E41D00C5536F /* StripeCardScan */; };
+		FA5F06272A17E41D00C5536F /* StripeFinancialConnections in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06262A17E41D00C5536F /* StripeFinancialConnections */; };
+		FA5F06292A17E41D00C5536F /* StripeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F06282A17E41D00C5536F /* StripeIdentity */; };
+		FA5F062B2A17E41D00C5536F /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F062A2A17E41D00C5536F /* StripePaymentSheet */; };
+		FA5F063F2A18362F00C5536F /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F063E2A18362F00C5536F /* QRScannerView.swift */; };
+		FA5F06452A18399D00C5536F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F06442A18399D00C5536F /* ContentView.swift */; };
+		FA5F064D2A19292700C5536F /* PaymentSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F064C2A19292700C5536F /* PaymentSettingsView.swift */; };
+		FA5F06502A194DB800C5536F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F064F2A194DB800C5536F /* Alamofire */; };
+		FA5F06582A19B1D600C5536F /* ShippingAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F06572A19B1D600C5536F /* ShippingAddressViewModel.swift */; };
+		FA5F065A2A19B31D00C5536F /* PaymentCardTextFieldRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F06592A19B31D00C5536F /* PaymentCardTextFieldRepresentable.swift */; };
+		FA5F065C2A19B36300C5536F /* AddressSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F065B2A19B36300C5536F /* AddressSettingsView.swift */; };
+		FA5F06602A1A73FC00C5536F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F065F2A1A73FC00C5536F /* APIService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA5F06022A16D2BF00C5536F /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5F06052A16D2BF00C5536F /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		FA5F06092A16D2C000C5536F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5F060C2A16D2C000C5536F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA5F061A2A16E29000C5536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA5F063E2A18362F00C5536F /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		FA5F06442A18399D00C5536F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA5F064C2A19292700C5536F /* PaymentSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSettingsView.swift; sourceTree = "<group>"; };
+		FA5F06572A19B1D600C5536F /* ShippingAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingAddressViewModel.swift; sourceTree = "<group>"; };
+		FA5F06592A19B31D00C5536F /* PaymentCardTextFieldRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardTextFieldRepresentable.swift; sourceTree = "<group>"; };
+		FA5F065B2A19B36300C5536F /* AddressSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSettingsView.swift; sourceTree = "<group>"; };
+		FA5F065F2A1A73FC00C5536F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA5F05FF2A16D2BF00C5536F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F06272A17E41D00C5536F /* StripeFinancialConnections in Frameworks */,
+				FA5F06502A194DB800C5536F /* Alamofire in Frameworks */,
+				FA5F06252A17E41D00C5536F /* StripeCardScan in Frameworks */,
+				FA5F06232A17E41D00C5536F /* StripeApplePay in Frameworks */,
+				FA5F06292A17E41D00C5536F /* StripeIdentity in Frameworks */,
+				FA5F062B2A17E41D00C5536F /* StripePaymentSheet in Frameworks */,
+				FA5F06152A16DBD400C5536F /* CodeScanner in Frameworks */,
+				FA5F06212A17E41D00C5536F /* Stripe in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA5F05F92A16D2BF00C5536F = {
+			isa = PBXGroup;
+			children = (
+				FA5F06042A16D2BF00C5536F /* Main */,
+				FA5F06032A16D2BF00C5536F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5F06032A16D2BF00C5536F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F06022A16D2BF00C5536F /* Main.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5F06042A16D2BF00C5536F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F061A2A16E29000C5536F /* Info.plist */,
+				FA5F06052A16D2BF00C5536F /* MainApp.swift */,
+				FA5F063E2A18362F00C5536F /* QRScannerView.swift */,
+				FA5F06442A18399D00C5536F /* ContentView.swift */,
+				FA5F065F2A1A73FC00C5536F /* APIService.swift */,
+				FA5F06592A19B31D00C5536F /* PaymentCardTextFieldRepresentable.swift */,
+				FA5F064C2A19292700C5536F /* PaymentSettingsView.swift */,
+				FA5F065B2A19B36300C5536F /* AddressSettingsView.swift */,
+				FA5F06572A19B1D600C5536F /* ShippingAddressViewModel.swift */,
+				FA5F06092A16D2C000C5536F /* Assets.xcassets */,
+				FA5F060B2A16D2C000C5536F /* Preview Content */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA5F060B2A16D2C000C5536F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F060C2A16D2C000C5536F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5F06012A16D2BF00C5536F /* Main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5F06102A16D2C000C5536F /* Build configuration list for PBXNativeTarget "Main" */;
+			buildPhases = (
+				FA5F05FE2A16D2BF00C5536F /* Sources */,
+				FA5F05FF2A16D2BF00C5536F /* Frameworks */,
+				FA5F06002A16D2BF00C5536F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Main;
+			packageProductDependencies = (
+				FA5F06142A16DBD400C5536F /* CodeScanner */,
+				FA5F06202A17E41D00C5536F /* Stripe */,
+				FA5F06222A17E41D00C5536F /* StripeApplePay */,
+				FA5F06242A17E41D00C5536F /* StripeCardScan */,
+				FA5F06262A17E41D00C5536F /* StripeFinancialConnections */,
+				FA5F06282A17E41D00C5536F /* StripeIdentity */,
+				FA5F062A2A17E41D00C5536F /* StripePaymentSheet */,
+				FA5F064F2A194DB800C5536F /* Alamofire */,
+			);
+			productName = Main;
+			productReference = FA5F06022A16D2BF00C5536F /* Main.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA5F05FA2A16D2BF00C5536F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FA5F06012A16D2BF00C5536F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FA5F05FD2A16D2BF00C5536F /* Build configuration list for PBXProject "Main" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA5F05F92A16D2BF00C5536F;
+			packageReferences = (
+				FA5F06132A16DBD400C5536F /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */,
+				FA5F064E2A194DB800C5536F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = FA5F06032A16D2BF00C5536F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5F06012A16D2BF00C5536F /* Main */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5F06002A16D2BF00C5536F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F060D2A16D2C000C5536F /* Preview Assets.xcassets in Resources */,
+				FA5F060A2A16D2C000C5536F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA5F05FE2A16D2BF00C5536F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F06452A18399D00C5536F /* ContentView.swift in Sources */,
+				FA5F065A2A19B31D00C5536F /* PaymentCardTextFieldRepresentable.swift in Sources */,
+				FA5F063F2A18362F00C5536F /* QRScannerView.swift in Sources */,
+				FA5F064D2A19292700C5536F /* PaymentSettingsView.swift in Sources */,
+				FA5F06062A16D2BF00C5536F /* MainApp.swift in Sources */,
+				FA5F065C2A19B36300C5536F /* AddressSettingsView.swift in Sources */,
+				FA5F06602A1A73FC00C5536F /* APIService.swift in Sources */,
+				FA5F06582A19B1D600C5536F /* ShippingAddressViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA5F060E2A16D2C000C5536F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA5F060F2A16D2C000C5536F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5F06112A16D2C000C5536F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Main/Preview Content\"";
+				DEVELOPMENT_TEAM = 4FKYH3CPJP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Main/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.test.Main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA5F06122A16D2C000C5536F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Main/Preview Content\"";
+				DEVELOPMENT_TEAM = 4FKYH3CPJP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Main/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.test.Main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA5F05FD2A16D2BF00C5536F /* Build configuration list for PBXProject "Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5F060E2A16D2C000C5536F /* Debug */,
+				FA5F060F2A16D2C000C5536F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5F06102A16D2C000C5536F /* Build configuration list for PBXNativeTarget "Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5F06112A16D2C000C5536F /* Debug */,
+				FA5F06122A16D2C000C5536F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA5F06132A16DBD400C5536F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TwoStraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+		FA5F064E2A194DB800C5536F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA5F06142A16DBD400C5536F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F06132A16DBD400C5536F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		FA5F06202A17E41D00C5536F /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		FA5F06222A17E41D00C5536F /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+		FA5F06242A17E41D00C5536F /* StripeCardScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeCardScan;
+		};
+		FA5F06262A17E41D00C5536F /* StripeFinancialConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeFinancialConnections;
+		};
+		FA5F06282A17E41D00C5536F /* StripeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeIdentity;
+		};
+		FA5F062A2A17E41D00C5536F /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F061F2A17E41D00C5536F /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentSheet;
+		};
+		FA5F064F2A194DB800C5536F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F064E2A194DB800C5536F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA5F05FA2A16D2BF00C5536F /* Project object */;
+}
